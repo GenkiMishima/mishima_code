@@ -5,6 +5,9 @@ implicit none
    integer time_ini
    integer*4,external::access
    call make_grid
+   open(66,file='result/condition.txt')
+   write(66,*) 'start'
+   close(66)
    if(access("restart.bin","r").eq.0)then
    open(15,file="restart.bin",form="unformatted")
       read(15) time
