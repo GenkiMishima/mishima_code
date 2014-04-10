@@ -18,3 +18,5 @@ clean:remove
 remove:
 tar:
 	tar zcvf result.tar.gz result/*
+clean_all:
+	rm -rf *.mod a.out *.o *.vtk result/*.vtk *.bin *.gz

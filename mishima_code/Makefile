@@ -37,4 +37,5 @@ clean:remove
 remove:
 tar:
 	tar zcvf data.tar.gz data/*
-
+clean_all:
+	rm -rf *.mod a.out *.o data/*.d *.d *.bin *.gz
